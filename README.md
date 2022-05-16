@@ -12,7 +12,7 @@ pm.test("Status code is 200", function () {
 });
 ```
  3. Проверить, что в body приходит правильный string.
-``` json 
+``` bash 
 pm.test("Body is the correct string", function () {
     pm.expect(pm.response.text()).to.include("This is the first responce from server!");
 });
