@@ -386,11 +386,12 @@ pm.test("u_salary_5_years check", function () {
  22. *** **Написать цикл который выведет в консоль по порядку элементы списка из параметра person**.
 ``` js 
 for(let n in jsonData.person) {
-	if(typeof(jsonData.person[n]) == "object"){
-		for(let i = 0; i < Object.keys(jsonData.person[n]).length; i++){
-			console.log(jsonData.person[n][i]);
-		}
-	}
- else {console.log(jsonData.person[n])}
+    if(typeof(jsonData.person[n]) == "object"){
+        console.log(n + ':')
+        for(let i = 0; i < Object.keys(jsonData.person[n]).length; i++){
+            console.log(jsonData.person[n][i]);
+            }
+ 	}
+  else {console.log(n + ' : ' + jsonData.person[n])}
 }
 ```
